@@ -2,6 +2,6 @@
 # Ignorer les fichiers temporaires générés par Excel
 ~$*.xlsx
 
-*.ipynb_checkpoints
-.Rhistory
-~$analyse_de_terre.xlsx
+Donnée/.ipynb_checkpoints
+Donnée/.Rhistory
+Donnée/~$analyse_de_terre.xlsx
