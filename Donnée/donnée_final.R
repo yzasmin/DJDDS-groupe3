@@ -43,3 +43,23 @@ head(merged_data)
 
 write.csv(merged_data, "merged_data.csv", row.names = FALSE)
 
+install.packages("dplyr")
+install.packages("ggplot2")
+
+# Charger les bibliothèques
+library(dplyr)
+library(ggplot2)
+
+
+summary(merged_data)
+correlation_matrix <- cor(merged_data)
+
+library(ggplot2)
+
+# Créer un nuage de points
+ggplot(merged_data, aes(x = `Moy E1_E2`, y = Surface)) + 
+  geom_point() +
+  labs(title = "Nuage de Points entre BMM et Surface",
+       x = "BMM",
+       y = "Surface") +
+  theme_minimal()
