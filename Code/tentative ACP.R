@@ -21,6 +21,16 @@ AnalyseDeTerre
 # Résumé statistique pour chaque colonne
 summary(AnalyseDeTerre)
 
+<<<<<<< HEAD
+=======
+# Boxplots pour visualiser la distribution
+library(ggplot2)
+ggplot(AnalyseDeTerre, aes(x = '', y = `Argile (déc) (o/oo) g/kg`)) + geom_boxplot() + labs(title="Distribution de l'argile")
+
+# Histogrammes pour visualiser la répartition des variables
+ggplot(AnalyseDeTerre, aes(x = `pH eau -`)) + geom_histogram(binwidth = 0.1, fill = "blue", color = "black") + labs(title="Distribution du pH")
+
+>>>>>>> 785e9afbab4b5029089ee9ac58b539d957c9a350
 # Matrice de corrélation entre les variables pertinentes
 correlation_matrix <- cor(AnalyseDeTerre[, c(4:21)], use = "complete.obs")
 
