@@ -1,7 +1,7 @@
 # DJDDS-groupe3
 Équipe n°3
-Jabali Anass
-Emanuele Justin
+Jabali Anas
+Emanuel Justin
 Taharaste Rayan
 Chirane Rania
 SAOUD Yasmina
